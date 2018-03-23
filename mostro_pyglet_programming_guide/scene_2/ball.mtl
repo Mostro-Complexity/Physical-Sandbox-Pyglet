@@ -1,0 +1,8 @@
+# Exported from 3D Builder
+
+newmtl Green
+Kd 0.129412 0.733333 0.298039
+
+newmtl White
+Kd 1.000000 1.000000 1.000000
+map_Kd paperbag.jpg
