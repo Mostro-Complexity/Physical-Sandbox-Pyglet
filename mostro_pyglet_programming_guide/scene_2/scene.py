@@ -1,5 +1,4 @@
 from math import sin, cos, pi
-
 import pyglet
 from pyassimp import *
 from pyglet import image
@@ -71,25 +70,6 @@ def scene_init():
     glEnable(GL_DEPTH_TEST)
     glEnable(GL_CULL_FACE)
 
-    # Uncomment this line for a wireframe view
-    # glPolygonMode(GL_FRONT_AND_BACK, GL_LINE)
-
-    # Simple light setup.  On Windows GL_LIGHT0 is enabled by default,
-    # but this is not the case on Linux or Mac, so remember to always
-    # include it.
-    glEnable(GL_LIGHTING)
-    glEnable(GL_LIGHT0)
-    glEnable(GL_LIGHT1)
-
-    # Define a simple function to create ctypes arrays of floats:
-
-    glLightfv(GL_LIGHT0, GL_POSITION, vec(.5, .5, 1, 0))
-    glLightfv(GL_LIGHT0, GL_SPECULAR, vec(.5, .5, 1, 1))
-    glLightfv(GL_LIGHT0, GL_DIFFUSE, vec(1, 1, 1, 1))
-    glLightfv(GL_LIGHT1, GL_POSITION, vec(1, 0, .5, 0))
-    glLightfv(GL_LIGHT1, GL_DIFFUSE, vec(.5, .5, .5, 1))
-    glLightfv(GL_LIGHT1, GL_SPECULAR, vec(1, 1, 1, 1))
-
     # 材质如何设置？
     properties = scene.materials[0].properties
     ambient = properties['ambient']
@@ -106,10 +86,12 @@ def scene_init():
 
 
 class TextureEnableGroup(pyglet.graphics.Group):
-    def set_state(self):
+    @staticmethod
+    def set_state():
         glEnable(GL_TEXTURE_2D)
 
-    def unset_state(self):
+    @staticmethod
+    def unset_state():
         glDisable(GL_TEXTURE_2D)
 
 

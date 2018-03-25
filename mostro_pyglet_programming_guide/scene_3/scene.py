@@ -1,4 +1,4 @@
-from math import sin, cos, pi
+from math import sin, cos, pi,sqrt
 
 import pyglet
 from pyassimp import *
@@ -20,6 +20,7 @@ class GameEventHandler(object):
     mouse_down = False
     mouse_orig_pos = [0, 0]
     rx, ry = 0, 0
+    track = []
 
     def on_mouse_drag(self, mouse_curr_x, mouse_curr_y, dx, dy, buttons, modifiers):
         if self.mouse_down:
@@ -47,10 +48,22 @@ class GameEventHandler(object):
     def on_draw(self):
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
         glLoadIdentity()
-        glTranslatef(sin(position[0] / 2), cos(position[1] / 2), 0)
+        position = (sin(integral_drift[0] / 2)/sqrt(integral_drift[0]),
+                    cos(integral_drift[1] / 2)/sqrt(integral_drift[1]))
+        self.track.append(position)
+        # glTranslatef(position[0], position[1], 0)
         gluLookAt(1.5 * cos(pi / 180 * self.rx), -self.ry, 1.5 * sin(pi / 180 * self.rx)
                   , 0, 0, 0, 0, 1, 0)
         ball.draw()
+
+        glColor3f(1, 1, 1)
+        glBegin(GL_LINE_STRIP)
+        for v in self.track:
+            glVertex3f(v[0], v[1], 0)
+        glEnd()
+
+    def on_key_press(self, symbol, modifiers):
+        pass
 
     @staticmethod
     def on_resize(width, height):
@@ -116,15 +129,15 @@ def update(dt):
     delta_x = 5 * dt
     delta_y = 5 * dt
     delta_z = 5 * dt
-    position[0] += delta_x
-    position[1] += delta_y
-    position[2] += delta_z
+    integral_drift[0] += delta_x
+    integral_drift[1] += delta_y
+    integral_drift[2] += delta_z
     pass
 
 
 scene_init()
 ball = pyglet.graphics.Batch()
-position = [0, 0, 0]
+integral_drift = [0.1, 0.1, 0.1]  # 位移的度量总和
 
 window.push_handlers(GameEventHandler())
 pyglet.app.event_loop.clock.schedule(update)
@@ -136,7 +149,7 @@ for m in scene.meshes:  # 导入模型数据
                                        TextureEnableGroup())
 
     ball.add(m.vertices.shape[0], GL_TRIANGLES, text_bind_group,
-             ('v3f/static', m.vertices.reshape(-1).tolist()),
+             ('v3f/stream', m.vertices.reshape(-1).tolist()),
              ('t3f/static', m.texturecoords.reshape(-1).tolist()))
     pass
 

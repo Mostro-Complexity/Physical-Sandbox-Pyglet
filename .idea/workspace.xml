@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96f8da2e-d56e-4e45-b277-344feb158cee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyglet_obj_test/display.py" afterPath="$PROJECT_DIR$/pyglet_obj_test/display.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyglet_obj_test/importers.py" afterPath="$PROJECT_DIR$/pyglet_obj_test/importers.py" />
-    </list>
+    <list default="true" id="96f8da2e-d56e-4e45-b277-344feb158cee" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,33 +55,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="simuu.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simuu.py">
+      <file leaf-file-name="comp_scene.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_4/comp_scene.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2055">
-              <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+            <state relative-caret-position="147">
+              <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
               <folding>
-                <element signature="e#441#454#0" expanded="true" />
-                <element signature="e#677#959#0" expanded="false" />
-                <element signature="e#982#1094#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modeling.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modeling.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#114#790#0" expanded="false" />
-                <element signature="e#819#1218#0" expanded="false" />
-                <element signature="e#1244#1644#0" expanded="false" />
-                <element signature="e#1673#2043#0" expanded="false" />
-                <element signature="e#2073#2475#0" expanded="false" />
-                <element signature="e#2504#3534#0" expanded="false" />
+                <element signature="e#144#179#0" expanded="false" />
+                <element signature="e#1967#2198#0" expanded="false" />
+                <element signature="e#2223#3346#0" expanded="false" />
+                <element signature="e#3597#4258#0" expanded="false" />
+                <element signature="e#4281#4447#0" expanded="false" />
+                <element signature="e#4476#5385#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -93,56 +75,11 @@
       <file leaf-file-name="graphics.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graphics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="144" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+            <state relative-caret-position="1407">
+              <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
               <folding>
-                <element signature="e#441#454#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scene.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_2/scene.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="43" column="21" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="43" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-                <element signature="e#3410#4071#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scene.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_3/scene.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="137" column="48" lean-forward="false" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="glu.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyglet/gl/glu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="495" column="88" lean-forward="false" selection-start-line="495" selection-start-column="88" selection-end-line="495" selection-end-column="88" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyglet/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6360">
-              <caret line="368" column="49" lean-forward="false" selection-start-line="368" selection-start-column="49" selection-end-line="368" selection-end-column="49" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -165,11 +102,13 @@
       <find>image</find>
       <find>event</find>
       <find>view</find>
+      <find>window</find>
+      <find>batches</find>
       <find>scene</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/pyglet_obj_test" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -181,15 +120,17 @@
         <option value="$PROJECT_DIR$/modeling.py" />
         <option value="$PROJECT_DIR$/load.py" />
         <option value="$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_with_pic.py" />
-        <option value="$PROJECT_DIR$/graphics.py" />
         <option value="$PROJECT_DIR$/simuu.py" />
         <option value="$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_1/scene_with_pic.py" />
-        <option value="$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_2/scene.py" />
         <option value="$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_3/scene.py" />
+        <option value="$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_4/modeling.py" />
+        <option value="$PROJECT_DIR$/graphics.py" />
+        <option value="$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_2/scene.py" />
+        <option value="$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_4/comp_scene.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="952" />
     <option name="width" value="976" />
     <option name="height" value="1050" />
@@ -241,12 +182,18 @@
               <item name="Demo" type="462c0819:PsiDirectoryNode" />
               <item name="mostro_pyglet_programming_guide" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="mostro_pyglet_programming_guide" type="462c0819:PsiDirectoryNode" />
+              <item name="scene_4" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,49 +217,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scene">
-    <configuration name="graphics" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.comp_scene">
+    <configuration name="comp_scene" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="simuu" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graphics.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_4/comp_scene.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="scene" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="simuu" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_3/scene.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.graphics" />
-      <item index="1" class="java.lang.String" itemvalue="Python.scene" />
-    </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.scene" />
-        <item index="1" class="java.lang.String" itemvalue="Python.graphics" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.comp_scene" />
       </list>
     </recent_temporary>
   </component>
@@ -333,26 +258,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1060" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5239583" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286334" sideWeight="0.47604167" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3557484" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286334" sideWeight="0.47604167" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.46145833" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.46145833" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -368,44 +293,16 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="33" />
+      <option name="time" value="46" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="material" language="Python" />
+        <watch expression="ball" language="Python" />
         <watch expression="scene" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyglet/graphics/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7833">
-          <caret line="378" column="8" lean-forward="false" selection-start-line="378" selection-start-column="8" selection-end-line="378" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_with_pic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="49" column="24" lean-forward="true" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simuu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#441#454#0" expanded="true" />
-            <element signature="e#677#959#0" expanded="false" />
-            <element signature="e#982#1094#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pyglet_obj_test/importers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2331">
@@ -418,7 +315,7 @@
         <state relative-caret-position="966">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="e#441#454#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -428,7 +325,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#441#454#0" expanded="true" />
+            <element signature="e#441#454#0" expanded="false" />
             <element signature="e#677#959#0" expanded="false" />
             <element signature="e#982#1094#0" expanded="false" />
           </folding>
@@ -454,7 +351,7 @@
         <state relative-caret-position="126">
           <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding>
-            <element signature="e#441#454#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -464,7 +361,7 @@
         <state relative-caret-position="21">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#441#454#0" expanded="true" />
+            <element signature="e#441#454#0" expanded="false" />
             <element signature="e#677#959#0" expanded="false" />
             <element signature="e#982#1094#0" expanded="false" />
           </folding>
@@ -484,7 +381,7 @@
         <state relative-caret-position="126">
           <caret line="6" column="14" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="6" selection-end-column="14" />
           <folding>
-            <element signature="e#441#454#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -501,7 +398,7 @@
         <state relative-caret-position="21">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#441#454#0" expanded="true" />
+            <element signature="e#441#454#0" expanded="false" />
             <element signature="e#677#959#0" expanded="false" />
             <element signature="e#982#1094#0" expanded="false" />
           </folding>
@@ -513,7 +410,7 @@
         <state relative-caret-position="126">
           <caret line="6" column="14" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="6" selection-end-column="14" />
           <folding>
-            <element signature="e#441#454#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -558,13 +455,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mesh.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyassimp/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="253" column="0" lean-forward="false" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pyglet/contrib/model/model/obj.py" />
     <entry file="file://$PROJECT_DIR$/pyglet/contrib/model/model/obj_batch.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/IPython/core/interactiveshell.py">
@@ -614,7 +504,7 @@
         <state relative-caret-position="231">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
             <element signature="e#114#790#0" expanded="false" />
             <element signature="e#819#1218#0" expanded="false" />
             <element signature="e#1244#1644#0" expanded="false" />
@@ -630,26 +520,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_with_pic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-696">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_with_pic.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyglet/graphics/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="556" column="36" lean-forward="true" selection-start-line="556" selection-start-column="36" selection-end-line="556" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyglet/image/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="153" column="23" lean-forward="false" selection-start-line="153" selection-start-column="19" selection-end-line="153" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -662,37 +537,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simuu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2055">
-          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding>
-            <element signature="e#441#454#0" expanded="true" />
-            <element signature="e#677#959#0" expanded="false" />
-            <element signature="e#982#1094#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/sympy/utilities/runtests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30891">
           <caret line="1501" column="41" lean-forward="false" selection-start-line="1501" selection-start-column="40" selection-end-line="1501" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyglet/gl/gl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="1385" column="0" lean-forward="false" selection-start-line="1385" selection-start-column="0" selection-end-line="1385" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyglet/gl/glu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="10353">
           <caret line="495" column="88" lean-forward="false" selection-start-line="495" selection-start-column="88" selection-end-line="495" selection-end-column="88" />
           <folding />
         </state>
@@ -700,7 +554,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyglet/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6360">
+        <state relative-caret-position="7707">
           <caret line="368" column="49" lean-forward="false" selection-start-line="368" selection-start-column="49" selection-end-line="368" selection-end-column="49" />
           <folding />
         </state>
@@ -711,43 +565,114 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyglet/image/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_3/scene.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#34#0" expanded="false" />
+            <element signature="e#493#917#0" expanded="false" />
+            <element signature="e#983#1088#0" expanded="false" />
+            <element signature="e#1943#2174#0" expanded="false" />
+            <element signature="e#3028#3141#0" expanded="false" />
+            <element signature="e#3195#3856#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyglet/gl/gl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="739" column="0" lean-forward="false" selection-start-line="739" selection-start-column="0" selection-end-line="739" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyglet/gl/lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="114" column="65" lean-forward="true" selection-start-line="114" selection-start-column="65" selection-end-line="114" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pyassimp/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="289" column="32" lean-forward="false" selection-start-line="289" selection-start-column="4" selection-end-line="289" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simuu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="141" column="42" lean-forward="true" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
+          <folding>
+            <element signature="e#441#454#0" expanded="false" />
+            <element signature="e#677#959#0" expanded="false" />
+            <element signature="e#982#1094#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_1/scene_with_pic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        <state relative-caret-position="315">
+          <caret line="63" column="26" lean-forward="true" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
           <folding>
-            <element signature="e#441#454#0" expanded="true" />
+            <element signature="e#441#454#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_4/modeling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/graphics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+        <state relative-caret-position="1407">
+          <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
           <folding>
-            <element signature="e#441#454#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_2/scene.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="43" column="21" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="43" selection-end-column="21" />
+        <state relative-caret-position="-462">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-            <element signature="e#3410#4071#0" expanded="false" />
+            <element signature="e#1679#2452#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_3/scene.py">
+    <entry file="file://$PROJECT_DIR$/mostro_pyglet_programming_guide/scene_4/comp_scene.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="137" column="48" lean-forward="false" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
+        <state relative-caret-position="147">
+          <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#144#179#0" expanded="false" />
+            <element signature="e#1967#2198#0" expanded="false" />
+            <element signature="e#2223#3346#0" expanded="false" />
+            <element signature="e#3597#4258#0" expanded="false" />
+            <element signature="e#4281#4447#0" expanded="false" />
+            <element signature="e#4476#5385#0" expanded="false" />
           </folding>
         </state>
       </provider>
