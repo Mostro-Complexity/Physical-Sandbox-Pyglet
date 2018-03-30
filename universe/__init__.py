@@ -25,6 +25,7 @@ class Planet(object):
 
         # 轨迹
         if trace:
+            glLineWidth(2)
             glColor3f(1, 1, 1)
             glBegin(GL_LINE_STRIP)
             for v in self.track:

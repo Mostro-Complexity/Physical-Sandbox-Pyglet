@@ -1,3 +1,4 @@
+from math import cos, sin
 from pyassimp import *
 from pyglet import image
 from pyglet.gl import *
@@ -90,6 +91,22 @@ class Model(object):
 
         return numpy.array(
             [(x_range[0] + x_range[1]) / 2, (y_range[0] + y_range[1]) / 2, (z_range[0] + z_range[1]) / 2])
+
+
+class Camera(object):
+    def __init__(self,location,sight):
+        self.location=location
+        self.sight=sight
+
+    def look_at(self,drag,total):
+        self.sight[0] = cos((total[1] + drag[1]) / 180) * sin((total[0] + drag[0]) / 180)
+        self.sight[1] = cos((total[1] + drag[1]) / 180) * cos((total[0] + drag[0]) / 180)
+        self.sight[2] = sin((total[1] + drag[1]) / 180)  # 方向向量
+
+        gluLookAt(self.location[0], self.location[1], self.location[2]
+                  , self.sight[0] + self.location[0],
+                  self.sight[1] + self.location[1],
+                  self.sight[2] + self.location[2], 0, 0, 1)
 
 
 def array(*args):

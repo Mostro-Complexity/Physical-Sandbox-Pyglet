@@ -18,21 +18,17 @@ v_C = [0, 0, 0]
 class GameEventHandler(object):
     mouse_down = False
     mouse_orig_pos = [0, 0]
-    rx, ry = 0, 0
+    # rx,ry为每次拖动的变化量，ix,iy为积累的拖动变化量
+    rx, ry, ix, iy = 0, 0, 0, 0
 
+    camera = Camera(np.array([-2., -2., -2.]), np.zeros(3))
     # 开始时间t=0,步长为1
     gen = runge_kutta_generator(np.array([r_A + v_A + r_B + v_B + r_C + v_C]), 0, 1, gravity)
 
     def on_mouse_drag(self, mouse_curr_x, mouse_curr_y, dx, dy, buttons, modifiers):
         if self.mouse_down:
-            self.rx += mouse_curr_x - self.mouse_orig_pos[0]
-            self.ry += 0.03 * (mouse_curr_y - self.mouse_orig_pos[1])
-            if self.ry > 1.0:
-                self.ry = 1.0
-            elif self.ry < -1.0:
-                self.ry = -1.0
-            self.mouse_orig_pos[0] = mouse_curr_x
-            self.mouse_orig_pos[1] = mouse_curr_y
+            self.rx = mouse_curr_x - self.mouse_orig_pos[0]
+            self.ry = mouse_curr_y - self.mouse_orig_pos[1]
         else:
             self.rx, self.ry = 0, 0
 
@@ -44,14 +40,17 @@ class GameEventHandler(object):
 
     def on_mouse_release(self, x, y, button, modifiers):
         self.mouse_down = False
+        self.ix += self.rx
+        self.iy += self.ry
+        self.rx = 0
+        self.ry = 0
         pass
 
     def on_draw(self):
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
         glLoadIdentity()
-        gluLookAt(1.5 * cos(pi / 180 * self.rx), -self.ry, 1.5 * sin(pi / 180 * self.rx)
-                  , 0, 0, 0, 0, 1, 0)
-        glLineWidth(5.0)
+
+        self.camera.look_at((self.rx, self.ry), (self.ix, self.iy))
 
         Y = next(self.gen)
         position = np.r_[Y[0:3], Y[6:9], Y[12:15]]
@@ -61,7 +60,37 @@ class GameEventHandler(object):
         planets[1].move(position[3:6], True)
         planets[2].move(position[6:9], True)
 
+        glColor3f(0.6, 0.6, 0.6)
+        glBegin(GL_LINE_STRIP)
+        glVertex3f(0, 0, 0)
+        glVertex3f(100, 0, 0)
+        glEnd()
+
+        glColor3f(0.6, 0.6, 0.6)
+        glBegin(GL_LINE_STRIP)
+        glVertex3f(0, 0, 0)
+        glVertex3f(0, 100, 0)
+        glEnd()
+
+        glColor3f(0.6, 0.6, 0.6)
+        glBegin(GL_LINE_STRIP)
+        glVertex3f(0, 0, 0)
+        glVertex3f(0, 0, 100)
+        glEnd()
+
     def on_key_press(self, symbol, modifiers):
+        if symbol == pyglet.window.key.W:
+            print('W')
+            self.camera.location += 0.1 * self.camera.sight
+        if symbol == pyglet.window.key.S:
+            print('S')
+            self.camera.location -= 0.1 * self.camera.sight
+        if symbol == pyglet.window.key.A:
+            # 头顶到视角的叉乘
+            print('A')
+        if symbol == pyglet.window.key.D:
+            # 视角到头顶的叉乘
+            print('D')
         pass
 
     @staticmethod
@@ -69,7 +98,7 @@ class GameEventHandler(object):
         glViewport(0, 0, width, height)
         glMatrixMode(GL_PROJECTION)
         glLoadIdentity()
-        gluPerspective(70., width / float(height), .1, 1000.)
+        gluPerspective(30., width / float(height), .1, 1000.)
         glMatrixMode(GL_MODELVIEW)
         return pyglet.event.EVENT_HANDLED
 
@@ -107,8 +136,8 @@ def scene_init():
 
 
 if __name__ == '__main__':
-    window = pyglet.window.Window(resizable=True,caption='Sandbox of planet movement')  # , config=config)
-    
+    window = pyglet.window.Window(resizable=True, caption='Sandbox of planet movement')  # , config=config)
+
     model = Model('face.obj', 'brmarble.png', 500)
     planets = [Planet(model, np.array(v_A), np.array(r_A)), Planet(model, np.array(v_B), np.array(r_B)),
                Planet(model, np.array(v_C), np.array(r_C))]
