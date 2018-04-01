@@ -7,13 +7,6 @@ from mostro.modeling import *
 from mostro.simulation import gravity, runge_kutta_generator
 from universe import *
 
-r_A = [0, 1, 1.2]
-r_B = [1.8, 0, 1.32]
-r_C = [1.54, 1.86, 0]
-v_A = [0, 0, 0]
-v_B = [0, 0, 0]
-v_C = [0, 0, 0]
-
 
 class GameEventHandler(object):
     mouse_down = False
@@ -22,8 +15,16 @@ class GameEventHandler(object):
     rx, ry, ix, iy = 0, 0, 0, 0
 
     camera = Camera(np.array([-2., -2., -2.]), np.zeros(3))
-    # 开始时间t=0,步长为1
-    gen = runge_kutta_generator(np.array([r_A + v_A + r_B + v_B + r_C + v_C]), 0, 1, gravity)
+
+    def __init__(self, *args):
+        self.planets = args[0]
+        start_param = np.zeros(len(self.planets) * 6)
+
+        for i in range(len(self.planets)):
+            start_param[i * 6:i * 6 + 6] = np.r_[self.planets[i].start_location, self.planets[i].start_velocity]
+        # 开始时间t=0,步长为1
+        self.gen = runge_kutta_generator(start_param, 0, 1, gravity,
+                                         np.array([i.quality for i in planets]))
 
     def on_mouse_drag(self, mouse_curr_x, mouse_curr_y, dx, dy, buttons, modifiers):
         if self.mouse_down:
@@ -53,12 +54,15 @@ class GameEventHandler(object):
         self.camera.look_at((self.rx, self.ry), (self.ix, self.iy))
 
         Y = next(self.gen)
-        position = np.r_[Y[0:3], Y[6:9], Y[12:15]]
-        # print(position)
-
-        planets[0].move(position[0:3], True)
-        planets[1].move(position[3:6], True)
-        planets[2].move(position[6:9], True)
+        # position = np.r_[Y[0:3], Y[6:9], Y[12:15]]
+        position = np.zeros(3 * len(self.planets))
+        for i in range(len(self.planets)):
+            position[3 * i:3 * i + 3] = Y[6 * i:6 * i + 3]
+        # planets[0].move(position[0:3], True)
+        # planets[1].move(position[3:6], True)
+        # planets[2].move(position[6:9], True)
+        for i in range(len(self.planets)):
+            self.planets[i].move(position[3 * i:3 * i + 3], True)
 
         glColor3f(0.6, 0.6, 0.6)
         glBegin(GL_LINE_STRIP)
@@ -80,18 +84,15 @@ class GameEventHandler(object):
 
     def on_key_press(self, symbol, modifiers):
         if symbol == pyglet.window.key.W:
-            print('W')
             self.camera.location += 0.1 * self.camera.sight
         if symbol == pyglet.window.key.S:
-            print('S')
             self.camera.location -= 0.1 * self.camera.sight
         if symbol == pyglet.window.key.A:
             # 头顶到视角的叉乘
-            print('A')
+            pass
         if symbol == pyglet.window.key.D:
             # 视角到头顶的叉乘
-            print('D')
-        pass
+            pass
 
     @staticmethod
     def on_resize(width, height):
@@ -139,11 +140,13 @@ if __name__ == '__main__':
     window = pyglet.window.Window(resizable=True, caption='Sandbox of planet movement')  # , config=config)
 
     model = Model('face.obj', 'brmarble.png', 500)
-    planets = [Planet(model, np.array(v_A), np.array(r_A)), Planet(model, np.array(v_B), np.array(r_B)),
-               Planet(model, np.array(v_C), np.array(r_C))]
+    planets = [Planet(model, np.array([0, 0, 0]), np.array([0, 1, 1.2]), 5.965e4),
+               Planet(model, np.array([0, 0, 0]), np.array([1.8, 0, 1.32]), 5.965e4),
+               Planet(model, np.array([0, 0, 0]), np.array([1.54, 1.86, 0]), 5.965e4),
+               Planet(model, np.array([4e-4, 0, 4e-4]), np.array([0.04, 0.186, 0.]), 5.965e2)]
     scene_init()  # 灯光和整体材质设置
 
-    window.push_handlers(GameEventHandler())
+    window.push_handlers(GameEventHandler(planets))
     pyglet.app.event_loop.clock.schedule(Planet.update)
 
     pyglet.app.run()

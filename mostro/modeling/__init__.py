@@ -94,11 +94,11 @@ class Model(object):
 
 
 class Camera(object):
-    def __init__(self,location,sight):
-        self.location=location
-        self.sight=sight
+    def __init__(self, location, sight):
+        self.location = location
+        self.sight = sight
 
-    def look_at(self,drag,total):
+    def look_at(self, drag, total):
         self.sight[0] = cos((total[1] + drag[1]) / 180) * sin((total[0] + drag[0]) / 180)
         self.sight[1] = cos((total[1] + drag[1]) / 180) * cos((total[0] + drag[0]) / 180)
         self.sight[2] = sin((total[1] + drag[1]) / 180)  # 方向向量
